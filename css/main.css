@@ -88,7 +88,9 @@ textarea {
    ========================================================================== */
 
   
-/* General Styles */
+/*================
+General Styles 
+==================*/
     
 html {
     font-size: 16px;
@@ -104,6 +106,8 @@ body {
 ul, 
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
     
 a {
@@ -115,7 +119,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
-
+  margin: 0;
 }
     
 h3, 
@@ -150,7 +154,9 @@ address {
 }
 
 
-/*------------Base header - Footer styles -----------*/
+/*========================
+Base header - Footer styles
+===========================*/
 
 header,
 footer {
@@ -252,12 +258,14 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/*------------ Mobile styles - Homepage -----------*/
+/*========================
+Mobile styles - Homepage
+=========================*/
 
 /*---hero-area---*/
 
 .hero-area {
-  background-image: url('../img/hero-image.jpg');
+  background: url('../img/hero-image.jpg');
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -312,7 +320,7 @@ input[type=button] {
 /*--Features--*/
 
 .features {
-  background-image: url(../img/study-group-nature.png);
+  background: url(../img/study-group-nature.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -347,14 +355,13 @@ input[type=button] {
   margin: 0;
 }
 
-
-
 /*--reviews--*/
+
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -369,55 +376,56 @@ input[type=button] {
 
 
 
-/*------- Mobile styles About page--------*/
-/*--mission--*/
+/*===============================
+ Mobile styles About page
+ ================================*/
+
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 
+.map figure {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 125%;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  
+  flex-flow: row wrap; 
 }
 
 .contact-content p {
   margin: 0;
 }
 
-
-.map figure {
-  position: relative;
-  padding-bottom: 125%;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-}
-
-.map iframe {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-/*------- Mobile styles FAQ page--------*/
+/*=======================
+ Mobile styles FAQ page
+ ========================*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -440,14 +448,6 @@ input[type=button] {
 .faq h4 {
   line-height: 1.333;
 }
-
-
- 
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -538,7 +538,9 @@ input[type=button] {
    ========================================================================== */
 
 @media only screen and (min-width:768px) {
-  /*Tablet styles here*/
+  /*====================
+  Tablet styles here
+  =====================*/
 
   /* General styles */
   .content-wrapper {
@@ -686,9 +688,9 @@ input[type=button] {
   }
 
 
-  /* ==========================================================================
-    About Page
-    ========================================================================== */
+  /* =======================================================
+                  About Page
+    ======================================================== */
   
   .mission-content {
     display: flex;
@@ -721,7 +723,9 @@ input[type=button] {
   }
 
   
-  /*===== FAQ Page ======*/
+  /*=====================
+         FAQ Page 
+  =======================*/
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -744,7 +748,9 @@ input[type=button] {
 
 
 @media only screen and (min-width:1200px) {  
-  /*Desktop styles here */  
+  /*====================
+  Desktop styles here
+  ====================== */  
   
   header {
     padding: 15px 0;
@@ -813,7 +819,9 @@ input[type=button] {
     font-size: 1.875em;
   }
     
-  /* ================ About Page ================= */
+  /* =======================
+        About Page 
+  =========================== */
 
   .map figure {
     padding-bottom: 37.5%;
@@ -829,7 +837,9 @@ input[type=button] {
     font-size: 1.875em;
   }
     
-  /* =========FAQ Page =============== */
+  /* ==================================
+                FAQ Page 
+  ====================================== */
   .faq h2 {
       width: 100%;
       font-size: 3em;
